@@ -3,6 +3,7 @@
     "name": "rn-vs-ionic-benchmark",
     "slug": "rn-vs-ionic-benchmark",
     "version": "1.0.0",
+    "scheme": "rnionicbenchmark",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,20 +12,16 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
+    "assetBundlePatterns": ["**/*"],
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "versionCode": 1,
+      "package": "com.ferretwork.rnvsionicbenchmark"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "575b9369-c953-400e-8c24-439620de4205"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": ["expo-router"]
   }
 }
